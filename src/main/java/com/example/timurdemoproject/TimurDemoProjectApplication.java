@@ -11,7 +11,7 @@ public class TimurDemoProjectApplication {
 	}
 
 	public void test(){
-		System.out.println("not hello");
+		System.out.println("hello");
 	}
 
 }
