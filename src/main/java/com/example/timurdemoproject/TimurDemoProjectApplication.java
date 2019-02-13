@@ -10,5 +10,9 @@ public class TimurDemoProjectApplication {
 		SpringApplication.run(TimurDemoProjectApplication.class, args);
 	}
 
+	public void test(){
+		System.out.println("hello");
+	}
+
 }
 
