@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+    <changeSet author="timur-demo-project" id="changelog-1.0-1" dbms="h2">
+        <sql>
+            CREATE TABLE movie_table(
+            movie_id varchar(50) not null PRIMARY KEY,
+            movie_name varchar(50),
+            movie_info varchar(50)
+            )
+        </sql>
+    </changeSet>
+    <changeSet author="timur-demo-project" id="changelog-1.0-2" dbms="h2">
+        <sql>
+           INSERT INTO movie_table( movie_id, movie_name, movie_info )
+            VALUES('1','some_name','some_info');
+           INSERT INTO movie_table( movie_id, movie_name, movie_info )
+            VALUES('2','some_name2','some_info2');
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>

@@ -7,9 +7,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@EnableAutoConfiguration
 @EnableTransactionManagement
-@EnableJpaRepositories({"com.example.timurdemoprohect"})
-@ComponentScan({"com.example.timurdemoprohect"})
+@EnableJpaRepositories({"com.example.timurdemoproject"})
+@ComponentScan({"com.example.timurdemoproject"})
 public class AppConfig {
 }
