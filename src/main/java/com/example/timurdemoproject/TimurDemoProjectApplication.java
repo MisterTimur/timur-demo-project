@@ -8,7 +8,7 @@ public class TimurDemoProjectApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TimurDemoProjectApplication.class, args);
-                // Test Record from Timur
+                
 	}
 
 }
